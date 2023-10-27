@@ -8,3 +8,13 @@
 .bg01 {
   background-color: #1971c8;
 }
+
+.bg02 {
+  background-color: #1ce0ac;
+}
+
+.item {
+  border: solid 1px #e620be;
+  padding: 3px;
+  margin-bottom: 5px;
+}

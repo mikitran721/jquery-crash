@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>jQuery-Core: Utilities</title>
+    <script>
+        jQuery(document).ready(function(e){
+            $('#process').click(function(){
+                let contained = $("h2")[0];
+                // console.log(contained)
+                let tmp = $.contains(document.body,contained)
+                console.log(tmp)
+
+                let tmp1 = $.contains(document.body,$("#process")[0]);
+                console.log(tmp)
+            })
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery core - Utility</h2>
+    <!-- kiem tra 1 phan tu co nam trong 1 phan tu khac ko -->
+    <h3>jQuery.contains(container,contained)</h3>
+
+    <center>
+        <input type="button" value="Process" name="process" id="process">
+    </center>
+</body>
+</html>
