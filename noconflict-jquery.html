@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/prototype.js"></script>
+    <title>jQuery basic</title>
+    <script>
+        // noConflict()
+        var $j = jQuery.noConflict();
+        $j(document).ready(function(e){
+            $j('#process').click(function(e){
+                $j('#boxA').addClass('bg01');
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">jQuery(val)</h2>
+    <div class="boxA" id="boxA">
+        <div>1. HTML</div>
+        <div>2. CSS</div>
+    </div>
+    
+    <center>
+        <input type="button" value="Process" id="process" class="button" />
+    </center>
+</body>
+</html>
