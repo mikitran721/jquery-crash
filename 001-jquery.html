@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <title>jQuery basic</title>
+    <script>
+        /* 
+            1.jQuery(HTML object)
+        */
+    //    console.log(document + " ")
+        $(document).ready(function(e){
+            /* 
+            1.jQuery(HTML object)
+            //lay boxA
+            let boxA = document.getElementById('boxA');
+            // console.log(boxA);
+
+            // thay doi mau duong vien boxA
+            jQuery(boxA).css("border-color","red"); */
+
+            // $('#boxA').css("border-color","green");
+            let str='<span style="color:red;font-size:20px;">jQuery</span>';
+            $(str).appendTo('#boxA'); //them the span vao trong #boxA
+
+            //3. jQuery(HTML string)
+            $('<div>miki</div>').appendTo('#boxA');
+
+            //4. jQuery(HTML string, attribute object)
+            $('<div></div>',{"class":"bg01",text:"jQuery master"}).appendTo('#boxA');
+        })
+        // window.onload = function(){}
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">jQuery(val)</h2>
+    <div class="boxA" id="boxA"></div>
+</body>
+</html>
