@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <title>jQuery basic</title>
+    <script>
+        // .html() - .html(params)
+        $(document).ready(function(e){
+            $('#process').click(function(e){
+                let tmp = $('#boxA').html(); //hien thi cac item html ben trong kieu string
+                console.log(typeof tmp);
+
+                // $type() == typeof()-js
+                console.log($.type(tmp));
+
+                $('#boxB').html(tmp);
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">jQuery(val)</h2>
+    <div class="boxA" id="boxA">
+        <div>1. HTML</div>
+        <div>2. CSS</div>
+    </div>
+    <div class="boxA" id="boxB">
+    </div>
+    <center>
+        <input type="button" value="Process" id="process" class="button" />
+    </center>
+</body>
+</html>
