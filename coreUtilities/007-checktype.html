@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>jQuery-Core: Utilities</title>
+    <script>
+        jQuery(document).ready(function(e){
+            var a,b;
+            a = [300,'poo',400,'html',500,'js'];
+            b = "this is a test";
+
+            $('#process').click(function(){
+                // console.log($.isArray(a) + " " + $.isArray(b))
+                /* a={};
+                b={title:'jQuery master'};
+                console.log($.isEmptyObject(a) + " - " + $.isEmptyObject(b)); */
+                /* a={
+                    check:function(x,y){
+                        console.log(x + "|" + y);
+                    },
+                    string: "this is a test",
+                    obj:{title:'jQuery'},
+                    arr:[2,3,4,5]
+                }
+
+                //vong lap
+                $.each(a,function(i,val){
+                    console.log(i + "-is function: " + $.isFunction(val));
+                }) */
+
+                /* a = 100;
+                b = "-100x";
+                console.log($.isNumeric(a) + " - " + $.isNumeric(b)); */
+
+                /* a = {};
+                b = new String();
+                //cho biet doi tuong duoc khoi tao truc tiep hay duoc khoi tao tu Prototype
+                console.log($.isPlainObject(a) + " - " + $.isPlainObject(b)); */
+
+                // doc file xml
+                a = loadFile("files/books.xml","GET","xml");
+                b = document.body;
+                console.log($.isXMLDoc(a) + " - " + $.isXMLDoc(b));
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery core - Utility</h2>
+    
+    <h3>
+        jQuery.is..();
+    </h3>
+
+    <div id="boxA" class="boxA">
+        <div class="item">1.HTML</div>
+        <div class="item">2.CSS</div>
+        <div class="item">3.PHP</div>
+        <div class="item">4.LARAVEL</div>
+    </div>
+
+    <center>
+        <input type="button" value="Process" name="process" id="process">
+    </center>
+</body>
+</html>
