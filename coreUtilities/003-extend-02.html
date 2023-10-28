@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>jQuery-Core: Utilities</title>
+    <script>
+        jQuery(document).ready(function(e){
+            let defaults ={
+                title:"LT jQuery",
+                author:'Miki',
+                page:300,
+                price:40.35,
+                shipping:{
+                    us:1.5,
+                    eu:2.5,
+                    vn:100,
+                    ra:250,
+                }
+            };
+            
+            let book ={
+                title:"LT React",
+                author:'ENADEV',
+                page:320,
+                price:22.12,
+                saleoff:23.55,
+                shipping:{
+                    us:2.5,
+                    eu:3.5,
+                    sg:200
+                }
+            };
+
+            $('#process').click(function(){
+                console.log(defaults,book)
+
+                // dung voi `deep`option: true|false
+                // $.extend(false, defaults,book); //khong hop nhat object2
+                $.extend(true, defaults,book); //hop nhat 2 object
+                console.log(">>sau extend: ", defaults)
+            })
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery core - Utility</h2>
+    
+    <h3>
+        jQuery.extend(target[,object1][,objectN]) >>> target ke thua hoan toan cau truc & data tu object1<br/>
+        jQuery.extend([deep],target[,object1][,objectN])
+    </h3>
+
+    <div id="boxA" class="boxA">
+        <div class="item">1.HTML</div>
+        <div class="item">2.CSS</div>
+        <div class="item">3.PHP</div>
+        <div class="item">4.LARAVEL</div>
+    </div>
+
+    <center>
+        <input type="button" value="Process" name="process" id="process">
+    </center>
+</body>
+</html>
