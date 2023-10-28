@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>jQuery-Core: Utilities</title>
+    <script>
+        jQuery(document).ready(function(e){
+            
+            $('#process').click(function(){
+                test01();
+                // console.log("Out Tmp1: ", tmp1)
+                console.log("Out Tmp2: ", tmp2)
+                test02();
+            })
+        });
+
+        function test01(){
+            let tmp1=100;
+            $.globalEval('var tmp2 ="Poo"'); //bien toan cuc
+            console.log(">>Function1 <br/>")
+            console.log("In Tmp1: ",tmp1)
+            console.log("In Tmp2: ",tmp2)
+        }
+
+        function test02(){
+            console.log(">>Function2 <br/>")
+            // console.log("In Tmp1: ", tmp1)
+            console.log("In Tmp2: ", tmp2)
+        }
+    </script>
+</head>
+<body>
+    <h2>jQuery core - Utility</h2>
+    
+    <h3>
+        jQuery.globalEval(code): tao bien toan cuc trong JS
+    </h3>
+
+    <div id="boxA" class="boxA">
+        <div class="item">1.HTML</div>
+        <div class="item">2.CSS</div>
+        <div class="item">3.PHP</div>
+        <div class="item">4.LARAVEL</div>
+    </div>
+
+    <center>
+        <input type="button" value="Process" name="process" id="process">
+    </center>
+</body>
+</html>
