@@ -9,8 +9,10 @@
     <script>
         $(document).ready(function(e){
             $('#process').click(function(){
-                //cha-con
-                $("body > div").addClass("bg02");
+                //TO TIEN
+                // $("body center").addClass("bg02");
+                // $("body div div#html").addClass("bg02");
+                $("body div div.item").addClass("bg02");
             })
         })
     </script>
@@ -20,9 +22,9 @@
         <button id="process" class="button" type="button">Process</button>
     </center>
     <div id="boxA" class="boxA">
-        <div class="item">1.HTML</div>
+        <div class="item" id="html">1.HTML</div>
         <p class="item text2">2.CSS</p>
-        <div class="item">3.PHP</div>
+        <div class="item"><center>3.PHP</center></div>
         <span class="item bg01 text2">4.LARAVEL</span>
     </div>
     
