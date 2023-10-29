@@ -21,3 +21,4 @@
 ## SELECTORS - BASIC FILTERS
 
 - `:eq(index)` chon theo vi tri index-tinh tu 0
+- `:even` so chan; `:odd` so le
