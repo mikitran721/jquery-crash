@@ -9,21 +9,18 @@
     <script>
         $(document).ready(function(e){
             $('#process').click(function () {
-                // TH1:
-                // $('.item').addClass("bg02");
-                
-                // TH2
-                // $(".item.text2").addClass("bg02");
-                // $(".text2.item").addClass("bg02");
+                //TH1
+                // $("span").addClass('bg02');
+                // $("span, p").addClass('bg02');
 
                 // TH3
-                // $(".text2.item.bg01").addClass("bg02")
+                // $("span.text3, p.text2").addClass('bg02');
+                // $("center button").addClass('bg02');
 
-                // TH4
-                // $(".boxA .text2").addClass("bg02"); //dang phan tu dad-boy
-
-                //TH5
-                // $(".boxA *").addClass("bg02");
+                // $("#boxA .text2.bg01").addClass("bg02");
+                // $("#boxA p,#boxB p").addClass("bg02");
+                // $("#boxA p.text2,#boxB p.text2").addClass("bg02");
+                $("#boxA #html.item").addClass("bg02");
             })
         })
     </script>
@@ -34,7 +31,7 @@
         <button id="process" class="button" type="button">Process</button>
     </center>
     <div id="boxA" class="boxA">
-        <div class="item">1.HTML</div>
+        <div class="item" id="html">1.HTML</div>
         <p class="item text2">2.CSS</p>
         <div class="item">3.PHP</div>
         <span class="item bg01 text2">4.LARAVEL</span>
@@ -42,7 +39,7 @@
 
     <div id="boxB" class="boxA">
         <div class="item">1.Golang</div>
-        <p class="item text2">2.Java</p>
+        <p class="item">2.Java</p>
         <div class="item">3.Ruby</div>
         <span class="item text2 bg01">4.C#</span>
         <span class="item text3">5.Python</span>
