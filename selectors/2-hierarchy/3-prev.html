@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selector - Hierarchy</title>
+    <script>
+        $(document).ready(function(e){
+            $('#process').click(function(){
+                //PREV-NEXT; phan tu lien ke
+                // $("prev + next").addClass("bg02");
+                // $("div + p").addClass("bg02");
+                // $("div + p.text2").addClass("bg02");
+                $("div + span + span").addClass("bg02");
+            })
+        })
+    </script>
+</head>
+<body>
+    <center>
+        <button id="process" class="button" type="button">Process</button>
+    </center>
+    <div id="boxA" class="boxA">
+        <div class="item" id="html">1.HTML</div>
+        <p class="item text2">2.CSS</p>
+        <div class="item"><center>3.PHP</center></div>
+        <span class="item bg01 text2">4.LARAVEL</span>
+    </div>
+    
+    <div id="boxB" class="boxA">
+        <div class="item">1.Golang</div>
+        <p class="item text2">2.Java</p>
+        <div class="item">3.Ruby</div>
+        <span class="item text2 bg01">4.C#</span>
+        <span class="item text3">5.Python</span>
+    </div>
+</body>
+</html>
