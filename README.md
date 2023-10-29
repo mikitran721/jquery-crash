@@ -17,3 +17,7 @@
 - dad>boy
 - prev+next
 - prev~sibling
+
+## SELECTORS - BASIC FILTERS
+
+- `:eq(index)` chon theo vi tri index-tinh tu 0
