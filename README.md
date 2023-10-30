@@ -22,3 +22,6 @@
 
 - `:eq(index)` chon theo vi tri index-tinh tu 0
 - `:even` so chan; `:odd` so le
+- `:header` lien quan toi cac the h1->h6
+- `:not(tag1,tag2)` khong lay phan tu nao do
+- `:root()` tuong ung the html
