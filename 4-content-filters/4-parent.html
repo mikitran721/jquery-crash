@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Content filters</title>
+    <script>
+        $(document).ready(function(e){
+            $("#process").click(function(e){
+                // $("div.item:has('span')").addClass("bg02");
+                // $("#boxA:parent()").css('border','solid 2px red');
+                $("#tmp:parent()").css('border','solid 2px red');
+            })
+        })
+    </script>
+</head>
+<body>
+    <center>
+        <h2>jQuery(":has(divName)")</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <div class="boxA" id="boxA">
+        <div class="item">
+            <h2>1. HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam earum ipsum animi eveniet a illum facilis iste, quas molestias ad, aut nobis distinctio. Eius dicta sapiente praesentium placeat harum!</p>
+        </div>
+        <div class="item">
+            <h2>2. CSS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sapiente reprehenderit quam! Numquam, vel ipsam minima voluptatem, nobis alias, eligendi fugit at laborum labore magni provident libero totam et expedita.</p>
+        </div>
+        <div class="item">
+            <h2>3. Ajax</h2>
+            <p></p>
+            <span id="tmp">content</span>
+        </div>
+        <div class="item">
+            <h2>4. PHP</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque omnis asperiores! Rerum facilis enim minus sint accusantium ad unde laborum animi saepe harum, quia voluptatibus officiis expedita aliquam quasi?</p>
+        </div>
+    </div>
+</body>
+</html>

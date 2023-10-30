@@ -20,6 +20,13 @@
   display: block;
 }
 
+.item h2 {
+  font-size: 16px;
+}
+
+.item p {
+  padding: 2px 5px;
+}
 .text2 {
   font-weight: bold;
   color: brown;

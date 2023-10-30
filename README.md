@@ -25,3 +25,10 @@
 - `:header` lien quan toi cac the h1->h6
 - `:not(tag1,tag2)` khong lay phan tu nao do
 - `:root()` tuong ung the html
+
+## CONTENT FILTERS
+
+- `tag:contains("text")` kiem tra text co trong tag ko
+- `tag:empty()` lay phan tu khong co noi dung; 1 space cung la 1 ky tu.
+- `tag:has(tagName)` co phan tu con la tagName ko
+- `tag:parent()` co phai la node cha ko; child co the la content|node item.
