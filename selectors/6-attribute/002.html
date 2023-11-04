@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Attribute</title>
+    <script>
+        $(document).ready(function () {
+            $('#process').click(function () {
+                $("#boxA > [title*='jquery']").addClass('bg02');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Attribute [name*="value"] - Lua chon cac phan tu co thuoc tinh name=vale</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <div class="boxA" id="boxA">
+        <div class="item" lang="en" title="jquery course">
+            <h2>1. HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam earum ipsum animi eveniet a
+                illum
+                facilis iste, quas molestias ad, aut nobis distinctio. Eius dicta sapiente praesentium placeat harum!
+            </p>
+        </div>
+        <div class="item" lang="vi-VN" title="jquery-course">
+            <h2>2. CSS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sapiente reprehenderit quam! Numquam, vel
+                ipsam minima voluptatem, nobis alias, eligendi fugit at laborum labore magni provident libero totam et
+                expedita.</p>
+        </div>
+        <div class="item" lang="en-US" title="thejquery course">
+            <h2>3. Ajax</h2>
+            <p></p>
+            <span id="tmp">content</span>
+        </div>
+        <div class="item" lang="en-GB" title="the course">
+            <h2>4. PHP</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque omnis asperiores! Rerum facilis
+                enim
+                minus sint accusantium ad unde laborum animi saepe harum, quia voluptatibus officiis expedita aliquam
+                quasi?
+            </p>
+        </div>
+        <div class="item" lang="vi-SG">
+            <h2>5. React</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque omnis asperiores! Rerum facilis
+                enim
+                minus sint accusantium ad unde laborum animi saepe harum, quia voluptatibus officiis expedita aliquam
+                quasi?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

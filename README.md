@@ -37,3 +37,9 @@
 
 - $.show(val); $.hide(val) hien/an phan tu theo val giay (1000=1s)
 - $(tag:hidden); $(tag:visible) hien thi so phan tu an/hien theo node-tag
+
+## ATTRIBUTES - SELECTORS
+
+- [name |= "value"] phan tu voi thuoc tinh name=value hoac value- --> dieu kien 'value' phai dung dau;
+
+- [name*='value'] phan tu cua chua attribute 'name' co chua 'value'; gia tri nay co the nam bat ky noi dau
