@@ -32,3 +32,8 @@
 - `tag:empty()` lay phan tu khong co noi dung; 1 space cung la 1 ky tu.
 - `tag:has(tagName)` co phan tu con la tagName ko
 - `tag:parent()` co phai la node cha ko; child co the la content|node item.
+
+## VISIBILITY FILTERS
+
+- $.show(val); $.hide(val) hien/an phan tu theo val giay (1000=1s)
+- $(tag:hidden); $(tag:visible) hien thi so phan tu an/hien theo node-tag

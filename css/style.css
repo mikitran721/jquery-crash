@@ -35,3 +35,7 @@
   font-style: italic;
   color: rgb(17, 29, 201);
 }
+
+.hide {
+  display: none;
+}
