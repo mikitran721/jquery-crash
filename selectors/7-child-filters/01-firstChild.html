@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Attribute</title>
+    <script>
+        $(document).ready(function () {
+            $('#process').click(function () {
+                // $("#boxA > :first-child").addClass('bg02');
+                // $("#boxB > :first-child").addClass('bg02');
+                $("#boxA > p:first-child").addClass('bg02');
+                $("#boxB > p:first-child").addClass('bg02');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>jQuery(":first-child")</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <div class="boxA" id="boxA">
+        <p class="item">1. HTML</p>
+        <p class="item">2. CSS</p>
+        <p class="item">3. js</p>
+        <p class="item">4.Jquery</p>
+        <p class="item">5. Nuxt</p>
+    </div>
+    <div class="boxB" id="boxB">
+        <div class="item">1. PHP</div>
+        <p class="item">2. golang</p>
+        <p class="item">3. Next</p>
+        <p class="item">4. Tailwindcss</p>
+    </div>
+</body>
+
+</html>

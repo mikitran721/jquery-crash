@@ -49,3 +49,10 @@
 - [a!='b'] thuoc tinh a co gia gia tri khac `b`, voi `b` la duy nhat
 - [a^='b'] thuoc tinh `a` co chua `b` o start cua chuoi gia tri - khong co space
 - [a] kiem tra phan tu chua thuoc tinh `a` ko -[a='b'][c='d'] phan tu co thuoc tinh `a`='b' va thuoc tinh `c`='d'
+
+## CHILD FILTERS
+
+- `tag:first-child` phan tu con dau tien cua the tag
+- `tag:first-of-type` phan tu dau tien theo kieu cua tag;
+- `tag:last-child` va `tag:last-of-type`
+- `tag:nth-child(val)` phan tu con thu val
