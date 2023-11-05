@@ -43,3 +43,9 @@
 - [name |= "value"] phan tu voi thuoc tinh name=value hoac value- --> dieu kien 'value' phai dung dau;
 
 - [name*='value'] phan tu cua chua attribute 'name' co chua 'value'; gia tri nay co the nam bat ky noi dau
+- [a~='b'] the co thuoc tinh `a` co gia tri `b`; voi `b` co the o bat ky vi tri nao nhung phai cach ky tu khac 1 space;
+- [a$='b'] thuoc tinh `a` co chua `b` o cuoi chuoi gia tri
+- [a='b'] thuoc tinh `a` co gia tri `b`, voi `b` la duy nhat
+- [a!='b'] thuoc tinh a co gia gia tri khac `b`, voi `b` la duy nhat
+- [a^='b'] thuoc tinh `a` co chua `b` o start cua chuoi gia tri - khong co space
+- [a] kiem tra phan tu chua thuoc tinh `a` ko -[a='b'][c='d'] phan tu co thuoc tinh `a`='b' va thuoc tinh `c`='d'

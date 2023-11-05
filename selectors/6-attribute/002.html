@@ -10,7 +10,14 @@
     <script>
         $(document).ready(function () {
             $('#process').click(function () {
-                $("#boxA > [title*='jquery']").addClass('bg02');
+                // $("#boxA > [title*='jquery']").addClass('bg02');
+                // $("#boxA > [title~='jquery']").addClass('bg02');
+                // $("#boxA > [title$='course']").addClass('bg02');
+                // $("#boxA > [title='course']").addClass('bg02');
+                // $("#boxA > [title!='course']").addClass('bg02');
+                // $("#boxA > [title^='course']").addClass('bg02');
+                // $("#boxA > [title]").addClass('bg02');
+                $("#boxA > [title][class='item']").addClass('bg02');
             })
         })
     </script>
@@ -24,7 +31,7 @@
         <button type="button" id="process" class="process" value="process">Process</button>
     </center>
     <div class="boxA" id="boxA">
-        <div class="item" lang="en" title="jquery course">
+        <div class="item" lang="en" title="course">
             <h2>1. HTML</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quam earum ipsum animi eveniet a
                 illum
