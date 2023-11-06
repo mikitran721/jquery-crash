@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>Traversing</title>
+    <script>
+        $(document).ready(function () {
+            $("#process").click(function(){
+                /* var tmp = $("#boxA > *").eq(-2);
+                // console.log($(tmp).text());
+                $(tmp).addClass("bg02"); */
+
+                //.filter()
+                //.filter(selector) | .filter(function(index)) | .filter(element)
+                //1. filter(selector)
+                /* var elements = $("#boxA > *").filter("div.item");
+                console.log(elements)
+                $(elements).addClass("bg02"); */
+
+                // $("#boxA > *").filter("div.item").addClass("bg02");
+
+                //2. filter(element)
+                /* var elements = $("#boxA > *").filter("p");
+                elements.addClass("bg02")
+                console.log(elements) */
+
+                //3. filter(function(index))
+                var elements = $("#boxA > *").filter(function(index){
+                    // console.log($(this).text().length);
+                    // console.log(index)
+
+                    return ($(this).text().length > 6)
+                });
+                console.log(elements)
+                elements.addClass("bg02")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>FILTERING</h2>
+    </center>
+    <center>
+        <button type="button" class="button" id="process">Process</button>
+    </center>
+
+    <div class="boxA" id="boxA">
+        <p class="item">1.HTML</p>
+        <div class="item">2. CSS</div>
+        <p class="item">3. JS</p>
+        <p class="item">4. jQuery</p>
+        <p class="item">5. php</p>
+        <div class="item">6. asp</div>
+        <p class="item">7. jsp</p>
+    </div>
+</body>
+
+</html>

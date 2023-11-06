@@ -72,3 +72,12 @@
 - `checkall` vs `un-checkall`
 - khi su dung dong thoi `.attr()` va `.removeAttr()` se bi loi khong dung voi muc dich su dung; nen chuyen sang su dung `.prop()` va `.removeProp()`;
   - neu van bi loi thi su dung lai `.prop(attr,value)` de gan lai gia tri
+
+# TRAVERSING ~ SELECTORS
+
+- la 1 dang selectors su dung phuong thuc (method)
+- `.eq(index) | .eq(-index)` lay 1 phan tu trong tap hop cac phan tu; index tu 0
+- `.filter()` lay ra 1 tap hop cac phan tu trong 1 tap hop cac phan tu
+- `.first() | .last()`
+- `.has(element) | .has(selector)` the co chua phan thu ben trong
+- `.is()`
