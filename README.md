@@ -69,3 +69,6 @@
 - co the lua chon input theo dang `formName [name='inputName']`
 - `formName :radio[name='radioName']` su dung ket hop `:checked` de lay gia tri o lua chon
 - `:disabled` vs `:enabled`
+- `checkall` vs `un-checkall`
+- khi su dung dong thoi `.attr()` va `.removeAttr()` se bi loi khong dung voi muc dich su dung; nen chuyen sang su dung `.prop()` va `.removeProp()`;
+  - neu van bi loi thi su dung lai `.prop(attr,value)` de gan lai gia tri

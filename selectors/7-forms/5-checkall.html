@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Form</title>
+    <script>
+        $(document).ready(function () {
+            $('#checkAll').click(function (e) { checkAll(); });
+            $('#unCheckAll').click(function(e){unCheckAll(); })
+        })
+
+        function checkAll(){
+            var checks = $("#appForm :checkbox[name='programming']");
+            $.each(checks,function(){
+                // console.log($(this))
+                // $(this).attr('checked','checked')
+                $(this).prop('checked','checked')
+            })
+        }
+        
+        function unCheckAll(){
+            var checkeds = $("#appForm :checkbox[name='programming']:checked");
+            $.each(checkeds,function(){
+                // $(this).removeAttr('checked');
+                // $(this).removeProp('checked');
+                $(this).prop('checked',false);
+            })
+
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Form Elements</h2>
+    </center>
+    <center>
+        <button type="button" id="checkAll" class="process" value="process">Check all</button>
+        <button type="button" id="unCheckAll" class="process" value="process">Un check all</button>
+    </center>
+    <form action="" name="appForm" id="appForm" enctype="multipart/form-data" class="boxA">
+        <input type="checkbox" name="programming" class="input" value="Javascript"> JS <br/>
+        <input type="checkbox" name="programming" class="input" value="PHP"> PHP <br/>
+        <input type="checkbox" name="programming" class="input" value="ASP"> ASP <br/>
+        <input type="checkbox" name="programming" class="input" value="JSP"> JSP <br/>
+    </form>
+
+    <div id="info" class="boxA" style="min-height: 50px;">Info</div>
+</body>
+
+</html>
