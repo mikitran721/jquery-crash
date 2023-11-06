@@ -56,3 +56,8 @@
 - `tag:first-of-type` phan tu dau tien theo kieu cua tag;
 - `tag:last-child` va `tag:last-of-type`
 - `tag:nth-child(val)` phan tu con thu val
+- `tag:nth-last-child(val)` lay phan tu tu cuoi len theo vi tri val (val=2n; 2n+1) -`tag:nth-last-of-type(val)` lay phan tu tu cuoi len theo kieu node
+- `tag:nth-last-of-type(val)`
+- `tag:nth-of-type(val)`
+- `tag:only-child` chi co 1 child
+- `tag:only-of-type(val)` chi co 1 element theo type
