@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Form</title>
+    <script>
+        $(document).ready(function () {
+            $('#process').click(function () {
+                var checks = $("#appForm :checkbox[name='programming']:checked");
+                // console.log(checks)
+
+                //su dung vong lap
+                $.each(checks,function(){
+                    console.log($(this).val())
+                })
+
+                console.log($(checks).length)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Form Elements</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <form action="" name="appForm" id="appForm" enctype="multipart/form-data" class="boxA">
+        <input type="checkbox" name="programming" class="input" value="Javascript"> JS <br/>
+        <input type="checkbox" name="programming" class="input" value="PHP"> PHP <br/>
+        <input type="checkbox" name="programming" class="input" value="ASP"> ASP <br/>
+        <input type="checkbox" name="programming" class="input" value="JSP"> JSP <br/>
+    </form>
+
+    <div id="info" class="boxA" style="min-height: 50px;">Info</div>
+</body>
+
+</html>

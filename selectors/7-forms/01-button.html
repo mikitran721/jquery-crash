@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Form</title>
+    <script>
+        $(document).ready(function () {
+            $('#process').click(function () {
+            //    $("form[name='appForm']"); // truy cap theo name
+                // console.log($('#appForm :input[name="username"]'));
+                // console.log($('#appForm [name="username"]'));
+                $("#appForm [name='username']").addClass('bg02')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Form Elements</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <form action="" name="appForm" id="appForm" enctype="multipart/form-data" class="boxA">
+        <div>
+            Textbox:
+            <input type="text" name="username" id="username" class="input" value="Poo">
+        </div>
+        <div>
+            Password:
+            <input type="password" name="password" id="password" class="input" value="Poo123">
+        </div>
+    </form>
+</body>
+
+</html>

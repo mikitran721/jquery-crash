@@ -61,3 +61,11 @@
 - `tag:nth-of-type(val)`
 - `tag:only-child` chi co 1 child
 - `tag:only-of-type(val)` chi co 1 element theo type
+
+# FORM SELECTOR
+
+- `formName:input` tap hop cac input trong form
+
+- co the lua chon input theo dang `formName [name='inputName']`
+- `formName :radio[name='radioName']` su dung ket hop `:checked` de lay gia tri o lua chon
+- `:disabled` vs `:enabled`

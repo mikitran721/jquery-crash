@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Form</title>
+    <script>
+        $(document).ready(function () {
+            $("#appForm :disabled").val("Textbox da bi khoa");
+            $("#appForm :enabled").val("Textbox binh thuong");
+            $('#process').click(function () {
+                //mo lai phan tu disabled
+                $("#appForm :disabled").removeAttr("disabled").removeAttr("name");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Form Elements</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <form action="" name="appForm" id="appForm" enctype="multipart/form-data" class="boxA">
+        <div>
+            Textbox:
+            <input type="text" name="username" id="username" class="input" value="Poo" disabled="disabled">
+        </div>
+        <div>
+            Email:
+            <input type="text" name="email" id="email" class="input" value="Poo@test.com">
+        </div>
+    </form>
+
+    <div id="info" class="boxA" style="min-height: 50px;">Info</div>
+</body>
+
+</html>

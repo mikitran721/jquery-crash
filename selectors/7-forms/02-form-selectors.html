@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Selectors - Form</title>
+    <script>
+        $(document).ready(function () {
+            $('#process').click(function () {
+                
+                //insert username to info.div
+                /* var username = $("#appForm :text[name='username']");
+                $(username).addClass("bg02");
+                $("#info").html($(username).val()) */
+
+                //password
+                /* var password = $("#appForm :password[name='password']");
+                $(password).addClass("bg02");
+                $("#info").html($(password).val()) */
+                
+                //file
+                /* var picture = $("#appForm :file[name='picture']");
+                $(picture).addClass("bg02");
+                $("#info").html($(picture).val()) */
+
+                //RADIO
+                /* var skill = $("#appForm :radio[name='skill']");
+                $(skill).addClass("bg02");
+                $("#info").html($("#appForm :radio[name='skill']:checked").val()) */
+                
+                //submit
+                /* var btnSubmit = $("#appForm :submit[name='btnSubmit']");
+                $(btnSubmit).addClass("bg02");
+                $("#info").html($(btnSubmit).val()) */
+                
+                //reset
+                /* var btnReset = $("#appForm :reset[name='btnReset']");
+                $(btnReset).addClass("bg02");
+                $("#info").html($(btnReset).val()) */
+                
+                //select
+                /* var mobile = $("#appForm select[name='mobile']");
+                $(mobile).addClass("bg02");
+                $("#info").html($(mobile).val()) */
+                
+                //select multiple
+                /* var mobile2 = $("#appForm select[name='mobile2']");
+                $(mobile2).addClass("bg02");
+                $("#info").html($(mobile2).val()) */
+                
+                //them dau phay giua cac selected values
+                var mobile2 = $("#appForm select[name='mobile2']");
+                $(mobile2).addClass("bg02");
+                var opts = $("#appForm select[name='mobile2'] option:selected");
+                var str="";
+                $(opts).each(function(index,element){
+                    // console.log($(this).val());
+                    str += $(this).val() + ",";
+                })
+
+                $("#info").html(str);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Form Elements</h2>
+    </center>
+    <center>
+        <button type="button" id="process" class="process" value="process">Process</button>
+    </center>
+    <form action="" name="appForm" id="appForm" enctype="multipart/form-data" class="boxA">
+        <div>
+            Textbox:
+            <input type="text" name="username" id="username" class="input" value="Poo">
+        </div>
+        <div>
+            Password:
+            <input type="password" name="password" id="password" class="input" value="Poo123">
+        </div>
+        <div>
+            File upload:
+            <input type="file" name="picture" id="picture">
+        </div>
+
+        <div>
+            Select box:
+            <select name="mobile" id="mobile">
+                <option value="nokia">nokia</option>
+                <option value="samsung">samsung</option>
+                <option value="apple">Apple`</option>
+                <option value="htc">HTC</option>
+            </select>
+        </div>
+        
+        <div>
+            Select box - multiple:
+            <select name="mobile2" id="mobile2" multiple="multiple">
+                <option value="nokia">nokia</option>
+                <option value="samsung">samsung</option>
+                <option value="apple">Apple`</option>
+                <option value="htc">HTC</option>
+            </select>
+        </div>
+
+        <div>
+            Radio group:
+            <input type="radio" name="skill" class="input" value="html"/> HTML
+            <input type="radio" name="skill" class="input" value="css"/>CSS
+            <input checked="checked" type="radio" name="skill" class="input" value="js"/> JS
+            <input type="radio" name="skill" class="input" value="jquery"/> jQuery
+        </div>
+
+        <div>
+            Buttons:
+            <input type="submit" value="Submit" name="btnSubmit" class="input">
+            <input type="reset" value="Reset" name="btnReset" class="input">
+        </div>
+    </form>
+
+    <div id="info" class="boxA" style="min-height: 50px;">Info</div>
+</body>
+
+</html>
