@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <title>Traversing</title>
+    <script>
+        $(document).ready(function () {
+            $("#process").click(function(){
+                //-- .map(callback)
+                /* var tmp = $("#boxA > *").map(function(i,element){
+                    // console.log(i,element)
+                    if(element.tagName == 'DIV') return element;
+                })
+                console.log(tmp)
+                $(tmp).addClass("bg02") */
+
+                //-- .not(selector)
+                /* var tmp = $("#boxA > *").not(".abc");
+                // console.log(tmp);
+                $(tmp).addClass("bg02") */
+                
+                //-- .not(element)
+                /* var tmp = $("#boxA > *").not("p");
+                $(tmp).addClass("bg02") */
+                
+                //-- .not(callback); phan tu ko phai la DIV
+                /* var tmp = $("#boxA > *").not(function(index){
+                    return (this.tagName == "DIV")
+                });
+                $(tmp).addClass("bg02") */
+
+                //-- .not(jQueryObj)
+                var tmp = $("#boxA > *").not($(":even"));
+                $(tmp).addClass("bg02")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <!-- <h2>FILTERING | .has(selector) | .has(element)</h2> -->
+        <h2>FILTERING | .map(callback) | .not()</h2>
+        <h3>.not(selector) | .not(element) | .not(function(index)) | .net(jQueryObj)</h3>
+    </center>
+    <center>
+        <button type="button" class="button" id="process">Process</button>
+    </center>
+
+    <div class="boxA" id="boxA">
+        <p class="item">1.HTML</p>
+        <div class="item abc">2. CSS</div>
+        <p class="item abc">3. JS</p>
+        <p class="item"><strong class="abc">4. jQuery</strong></p>
+        <p class="item">5. php</p>
+        <div class="item"><strong class="abc">6. asp</strong></div>
+        <p class="item">7. jsp</p>
+    </div>
+</body>
+
+</html>

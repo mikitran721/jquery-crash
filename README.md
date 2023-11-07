@@ -80,4 +80,7 @@
 - `.filter()` lay ra 1 tap hop cac phan tu trong 1 tap hop cac phan tu
 - `.first() | .last()`
 - `.has(element) | .has(selector)` the co chua phan thu ben trong
-- `.is()`
+- `.is(element)` kiem ta co la element khong; vd: p, div
+- `.map(callback)` lap qua cac phan tu con
+- `.not()` nguoc voi `.eq()`
+- `.slice(start[,end])` lay phan tu tu start toi end

@@ -24,7 +24,18 @@
                 // $(tmp).addClass("bg02")
 
                 //2--- .is(element)
-                var tmp = $("#boxA > *").is("strong");
+                // var tmp = $("#boxA > *").is("p");
+                // console.log(tmp)
+
+                //-- .is(function(index))
+                /* var tmp = $("#boxA > *").is(function(index){
+                    // console.log($(this));
+                    return ($(this).text().length > 5);
+                })
+                console.log(tmp) */
+
+                //-- is(jQuery obj)
+                var tmp = $("#boxA > *").is($(".abc"))
                 console.log(tmp)
             })
         })
@@ -43,7 +54,7 @@
     <div class="boxA" id="boxA">
         <p class="item">1.HTML</p>
         <div class="item">2. CSS</div>
-        <p class="item">3. JS</p>
+        <p class="item abc">3. JS</p>
         <p class="item"><strong class="abc">4. jQuery</strong></p>
         <p class="item">5. php</p>
         <div class="item"><strong class="abc">6. asp</strong></div>
