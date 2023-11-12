@@ -92,3 +92,13 @@
 - `.find(element|selector|jqueryObj)` tim all phan tu thoa dieu kien (chau-con)
 - `.next([selector])` lay phan tu ke ben phan tu thoa dieu kien
 - `.nextAll([selector])` lay all phan tu ke ben
+- `.nextUntil([element][,filter])` lay phan tu ke ben cho toi khi gap dieu kien thi dung
+- `.parent([seletor])` lay phan tu bao boc phan tu lua chon
+- `.parents([selector])` lay tap hop phan tu cha theo selector hoac la tap hop all of parent cua the duoc chon.
+- `.pev(); .prevAll(); .prevUnitl()`
+- `.siblings([selector])` phan tu cung cap voi item danh dau
+- `.addBack([selector])` them phan tu bao boc (parent) vao phan tu duoc danh dau.
+
+## MISCELLANEOUS TRAVERSING
+
+-`.add()`

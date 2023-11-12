@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Traversing-TREE</title>
+    <script>
+        $(document).ready(function () {
+            $("#process").click(function () {
+                $("#boxA strong.abc").addClass("bg01");
+                // var tmp= $("#boxA strong.abc").parents(".boxA");
+                // var tmp= $("#boxA strong.abc").parents();
+                var tmp= $("#boxA strong.abc").parents("section.boxA");
+                // var tmp= $("#boxA strong.abc").parent("div");
+                $(tmp).addClass("bg02")
+                console.log(tmp)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>FILTERING | .parents([selector])</h2> 
+    </center>
+    <center>
+        <button type="button" class="button" id="process">Process</button>
+    </center>
+
+    <section class="boxA" id="boxA">
+        <p class="item">1.HTML</p>
+        <div class="item abc">2. CSS</div>
+        <p class="item abc">3. JS</p>
+        <section class="item"><strong class="abc">4. jQuery</strong></section>
+        <p class="item">5. php</p>
+        <div class="item"><strong>6. asp</strong></div>
+        <p class="item">7. jsp</p>
+    </section>
+</body>
+
+</html>
