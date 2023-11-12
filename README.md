@@ -84,3 +84,11 @@
 - `.map(callback)` lap qua cac phan tu con
 - `.not()` nguoc voi `.eq()`
 - `.slice(start[,end])` lay phan tu tu start toi end
+
+## TRAVERSING - TREE
+
+- `.children([selector])`
+- `.closest(selector) | .closest(element) | .closest(jQueryObj)` phan tu bao ngoai
+- `.find(element|selector|jqueryObj)` tim all phan tu thoa dieu kien (chau-con)
+- `.next([selector])` lay phan tu ke ben phan tu thoa dieu kien
+- `.nextAll([selector])` lay all phan tu ke ben
