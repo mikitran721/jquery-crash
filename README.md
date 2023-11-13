@@ -101,4 +101,8 @@
 
 ## MISCELLANEOUS TRAVERSING
 
--`.add()`
+-`.add()` them phan tu moi vao 1 tap hop danh dau co san
+
+- `.contents()` lay ra 1 tap hop cac phan tu nodeText+element+comments
+- `.each(function(i,elm))` duyet qua cac phan tu
+- `.end()` ket thuc lua chon & lua chon tiep phan tu khac.

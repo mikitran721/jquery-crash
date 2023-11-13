@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Traversing-TREE</title>
+    <script>
+        $(document).ready(function () {
+            $("#process").click(function () {
+                //-selector
+                // $("#boxA .tmp1, #boxA .tmp2")
+                // $("#boxA .tmp1").add(".tmp2").addClass("bg02")
+                // $("#boxA .tmp1").add("center").addClass("bg02")
+
+                // var eles = document.getElementsByTagName("center");
+                // $("#boxA .tmp2").add(eles).addClass("bg02")
+                
+                var jObj = $("#boxA :last"); //doi tuong jquery
+                $("#boxA .tmp2").add(jObj).addClass("bg02")
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>MISCELLANEOUS TRAVERSING | .add(selector) - .add(element) - .add(jqueryObj)</h2>
+    </center>
+    <center>
+        <button type="button" class="button" id="process">Process</button>
+    </center>
+
+    <div class="boxA" id="boxA">
+        <p class="item tmp1">1.HTML</p>
+        <p class="item tmp2">2. CSS</p>
+        <p class="item tmp3">3. JS</p>
+        <p class="item"><strong class="abc">4. jQuery</strong></p>
+        <p class="item">5. php</p>
+        <p class="item"><strong>6. asp</strong></p>
+        <p class="item">7. jsp</p>
+    </div>
+</body>
+
+</html>
