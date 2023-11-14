@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Traversing-TREE</title>
+    <script>
+        $(document).ready(function () {
+            $("#process").click(function () {
+                $("#boxA").removeAttr("class")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>ATTRIBUTES | .removeAttr(attributeName)</h2>
+    </center>
+    <center>
+        <button type="button" class="button" id="process">Process</button>
+    </center>
+
+    <div class="boxA bg01" id="boxA" title="jquery" style="font-size: 18px;">The jQuery course</div>
+
+    <div class="boxA" id="boxB">
+        <p class="item tmp1" title="html course">1.HTML</p>
+        <p class="item tmp2" title="css course">2. CSS</p>
+        <p class="item tmp3" title="js course">3. JS</p>
+        <p class="item" title="jQuery course"><strong class="abc">4. jQuery</strong></p>
+    </div>
+</body>
+
+</html>

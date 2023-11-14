@@ -101,8 +101,14 @@
 
 ## MISCELLANEOUS TRAVERSING
 
--`.add()` them phan tu moi vao 1 tap hop danh dau co san
-
+- `.add()` them phan tu moi vao 1 tap hop danh dau co san
 - `.contents()` lay ra 1 tap hop cac phan tu nodeText+element+comments
 - `.each(function(i,elm))` duyet qua cac phan tu
 - `.end()` ket thuc lua chon & lua chon tiep phan tu khac.
+
+# ATTRIBUTES
+
+- `.attr(attributeName) .attr(attributeName,value) .attr(attributeName,function(index,attr))` lay gia tri attr chi dinh; gan gia tri cho attr; voi function -> lay ra attr cua 1 tap hop cac phan tu
+- `.prop()` hoat dong tuong tu `.attr()` ben tren
+- `.removeAttr(attributeName); .removeProp(attributeName)` xoa 1 thuoc tinh; trong do `.removeProp()` se chuyen gia tri attr ve thanh undifined ma khong xoa bo attributeName; khong thay doi duoc style cua item.
+- `.val()`

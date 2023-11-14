@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <title>Traversing-TREE</title>
+    <script>
+        $(document).ready(function () {
+            $("#process").click(function () {
+                console.clear();
+                // var txt = $("#appForm :text[name='txt']").val()
+                // console.log(txt)
+
+                var pwd = $("#appForm :password[name='pwd']").val();
+                console.log(pwd);
+                
+                var upload = $("#appForm :file[name='upload']").val();
+                console.log(upload);
+
+                var gender = $("#appForm :radio[name='gender']:checked").val();
+                console.log(gender)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>ATTRIBUTES | .val(); .val(value); .val(function(index,value))</h2>
+    </center>
+    <center>
+        <button type="button" class="button" id="process">Process</button>
+    </center>
+    <form action="" method="post" name="appForm" class="boxA" id="appForm">
+        <div>
+            Textbox Field: 
+            <input type="text" name="txt" id="txt" placeholder="Poo" class="input">
+        </div>
+        <div>
+            Password Field: 
+            <input type="password" name="pwd" id="pwd" placeholder="poopwd" class="input">
+        </div>
+        <div>
+            File Field: 
+            <input type="file" name="upload" id="upload" class="input">
+        </div>
+        <div>
+            Radio Button:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </div>
+        <div>Checkbox:
+            <input type="checkbox" name="prog" id="php">PHP
+            <input type="checkbox" name="prog" id="jsp">JSP
+        </div>
+        <div>TextArea
+            <textarea name="content" cols="30" rows="5">jQuery course</textarea>
+        </div>
+        <div>Select box:
+            <select name="city" class="input">
+                <option value="hanoi">Ha noi</option>
+                <option value="HCM">HCM</option>
+                <option value="danang">Da nang</option>
+                <option value="cantho">Can Tho</option>
+            </select>
+        </div>
+        <div>Select multiple
+            <select name="district" size="5" multiple="multiple" style="width: 200px;">
+            <option value="Q1">Q1</option>
+            <option value="Q2">Q2</option>
+            <option value="q3">Q3</option>
+            <option value="q4">Q4</option>
+            <option value="q5">Q5</option>
+            <option value="q6">Q6</option>
+            </select>
+        </div>
+    </form>
+
+    <!-- <div class="boxA bg01" id="boxA" title="jquery" style="font-size: 18px;">The jQuery course</div>
+
+    <div class="boxA" id="boxB">
+        <p class="item tmp1" title="html course">1.HTML</p>
+        <p class="item tmp2" title="css course">2. CSS</p>
+        <p class="item tmp3" title="js course">3. JS</p>
+        <p class="item" title="jQuery course"><strong class="abc">4. jQuery</strong></p>
+    </div> -->
+</body>
+
+</html>
